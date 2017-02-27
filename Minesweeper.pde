@@ -17,13 +17,9 @@ void setup ()
     
     //your code to declare and initialize buttons goes here --slide 54
   buttons = new MSButton[NUM_ROWS][NUM_COLS];
-    for(int r=0; r<=NUM_ROWS; r++)
-        {
-            for(int c=0; c<=NUM_COLS; c++)
-            {
+    for(int r=0; r<NUM_ROWS; r++)
+            for(int c=0; c<NUM_COLS; c++)
                 buttons[r][c] = new MSButton(r,c);
-            }
-        }
     
     setBombs();
 }
@@ -61,8 +57,8 @@ public class MSButton
     
     public MSButton ( int rr, int cc )
     {
-         width = 400/NUM_COLS;
-         height = 400/NUM_ROWS;
+        width = 400/NUM_COLS;
+        height = 400/NUM_ROWS;
         r = rr;
         c = cc; 
         x = c*width;
