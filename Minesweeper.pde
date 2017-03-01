@@ -24,11 +24,11 @@ void setup ()
 }
 public void setBombs()
 {
-    /*bombs.add(Math.random()*)
-    if(!bombs.contains(buttons[row][col]))
+    bombs.add(MSButton[r][c]);
+    if(!bombs.contains(buttons[r][c]))
     {
-        bombs.add(?);
-    }*/
+        bombs.add(buttons[r][c]);
+    }
 }
 
 public void draw ()
