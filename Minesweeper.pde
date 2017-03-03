@@ -24,7 +24,9 @@ void setup ()
 }
 public void setBombs()
 {
-    bombs.add(MSButton[r][c]);
+int r = (int)(Math.random()*NUM_ROWS);
+int c = (int)(Math.random()*NUM_COLS);
+    bombs.add(buttons[r][c]); 
     if(!bombs.contains(buttons[r][c]))
     {
         bombs.add(buttons[r][c]);
