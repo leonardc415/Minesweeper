@@ -15,7 +15,7 @@ void setup ()
     // make the manager
     Interactive.make( this );
     
-    //your code to declare and initialize buttons goes here --slide 54
+    //your code to declare and initialize buttons goes here 
   buttons = new MSButton[NUM_ROWS][NUM_COLS];
     for(int r=0; r<NUM_ROWS; r++)
             for(int c=0; c<NUM_COLS; c++)
@@ -24,9 +24,9 @@ void setup ()
 }
 public void setBombs()
 {
-    Arraylist<MSButton> bombs = new Arraylist<MSButton>(
+    ArrayList<MSButton> bombs = new ArrayList<MSButton>(); 
 int r = (int)(Math.random()*NUM_ROWS);
-int c = (int)(Math.random()*NUM_COLS););
+int c = (int)(Math.random()*NUM_COLS);
     bombs.add(buttons[r][c]); 
     if(!bombs.contains(buttons[r][c]))
     {
